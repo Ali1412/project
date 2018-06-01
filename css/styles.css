@@ -10,7 +10,7 @@ a:visited{
 }
 
 a:hover {
-    color: red;
+    color: black;
     background-color: transparent;
     
 }
@@ -27,16 +27,16 @@ header {
 #main>ul {
     list-style: none;
     display: flex;
+    justify-content: space-between;
 }
 
 #main li{
     font-size: 20px;
-    padding: 0px 130px 0px;
+    
+    display:block;
 }
 
 #content {
-  max-width: 1000px;
-  min-width:200px;
   margin: 0 auto;
   font-family: "Helvetica", "Arial", san-serif;
   font-size: 10pt;
@@ -45,24 +45,38 @@ header {
 
 .grupp {
     display: flex;
+    min-width: 940px;
 }
 
 .nyhet{
-  background-color: linen;
+  background-color:aliceblue;
   flex-basis: 60%;
 }
+
 .b2{
     width: 400px;
     height: 300px;
     
 }
 
-.match {
-  background-color: #dfd;
-  flex-basis: 40%;
+.matcher {
+  background-color: beige;
+  flex-basis: 50%;
 }
 
 
+
+
+
+@media (max-device-width:650px) {
+    #main ul {
+        flex-direction: column;
+    }
+    
+    .grupp {
+        flex-direction: column;
+    }
+}
 
 /* För lite bredare skärmar ska menyn hamna på höger sida.
    Lättfixat med flexbox. */
@@ -77,6 +91,7 @@ header {
          utan hamnar den på vänster sida i stället. */
         order: 1;
     }
+   
 }
 
 /* För riktigt breda skärmar använder vi toppmeny. */
@@ -97,6 +112,7 @@ header {
 
     }
     
+}
     .toppmeny {
         height: 2em;
     }
@@ -107,4 +123,69 @@ header {
          * (default) så sticker menyerna.
          */
         overflow: hidden;
+}
+
+    .logos{
+        display: flex;
+    }
+    
+    .b3{
+        width: 70px;
+        padding: 0px 100px
+    }
+    
+    .b4{ width: 70px; 
+    padding: 0px 100px;    
+    
+    }
+    .tit{
+        padding: 50px;
+        
+    }
+    
+    .name1{
+        padding: 0px 200px; 
+    }
+    
+    .time1{
+        padding: 0px 210px;
+    }
+    
+.match{
+    border: 1px solid black;
+    padding-bottom:  50px;
+}
+    .match2{
+        padding-bottom: 50px;
+        border: 1px solid black;
+    }
+    .His{
+        display: flex;
+    }
+    
+    .hist{
+        width: 600px;
+        padding: 100px 150px;
+    }
+    
+    .b5{
+        width: 300px;
+        padding-top: 100px
+    }
+    
+    .wenger{
+        display: flex;
+    }
+
+.wen{
+    padding: 0px 150px;
+}
+
+.tex{
+    width: 600px;
+    padding: 0px 100px;
+}
+
+.container {
+    min-width:940px;
 }
